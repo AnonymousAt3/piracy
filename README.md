@@ -12,7 +12,7 @@
 
 
 
-<IMG SRC="https://github.com/AnonymousAt3/piracy/blob/main/img/piracy.png">
+<IMG SRC="https://github.com/AnonymousAt3/piracy/blob/main/img/piracy.gif">
 
 # Enable monitor mode
 Monitor mode or RFMON (Radio Frequency Monitor) mode, enables a device with a wireless network interface controller to monitor all traffic received from the wireless network. Unlike promiscuous mode, which is also used for packet sniffing, RFMON mode enables packets to be captured without having to connect or link with an access point. RFMON mode only works with wireless networks, while promiscuous mode can be applied to both wired and wireless networks. RFMON mode is not really a wireless mode but it is especially important in attacking wireless networks. In a nutshell, it allows a wireless card to “monitor” the packets that are received without any filtering. Monitor mode is essentially the “promiscuous mode” equivalent for wireless. 
