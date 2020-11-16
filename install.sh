@@ -1,6 +1,6 @@
 
 
-
+chmod +x piracy
 
 cp -r piracy /usr/local/sbin/
 cp -r script /usr/local/sbin/
