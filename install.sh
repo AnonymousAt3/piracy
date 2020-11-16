@@ -1,13 +1,13 @@
 
 
-chmod +x piracy
+
 
 cp -r piracy /usr/local/sbin/
 cp -r script /usr/local/sbin/
 
 
 chmod +x piracy
-chmod +x /usr/local/sbin/script/piracy
+chmod +x /usr/local/sbin/piracy
 chmod +x /usr/local/sbin/script/cpa.sh
 chmod +x /usr/local/sbin/script/cph.sh
 chmod +x /usr/local/sbin/script/cws.sh
