@@ -1,0 +1,164 @@
+#!/bin/bash
+#This Script Was Made By @cyberghost
+
+clear
+
+
+echo -e '
+
+\e[1;5;34m
+   ▄███████▄  ▄█     ▄████████    ▄████████  ▄████████ ▄██   ▄
+  ███    ███ ███    ███    ███   ███    ███ ███    ███ ███   ██▄
+  ███    ███ ███▌   ███    ███   ███    ███ ███    █▀  ███▄▄▄███
+  ███    ███ ███▌  ▄███▄▄▄▄██▀   ███    ███ ███        ▀▀▀▀▀▀███
+▀█████████▀  ███▌ ▀▀███▀▀▀▀▀   ▀███████████ ███        ▄██   ███
+  ███        ███  ▀███████████   ███    ███ ███    █▄  ███   ███
+  ███        ███    ███    ███   ███    ███ ███    ███ ███   ███
+ ▄████▀      █▀     ███    ███   ███    █▀  ████████▀   ▀█████▀
+                    ███    ███                                 \e[0m
+
+       __________________________________________________________________________________________
+      |                                                                                         |
+      |  {@} Coded By CyberGhost                                                           {@}  |
+      |  {@} Youtube  - https://www.youtube.com/channel/UCcbkV_EimZpPihtVvGVcf_A/featured  {@}  |
+      |  {@} Github   - https://github.com/AnonymousAt3                                    {@}  |
+      |_________________________________________________________________________________________|
+
+                        >>>>>>>>>>>>>>>>   MENU   <<<<<<<<<<<<<<<<<<
+ \e[1;30m
+{1} Enable monitor mode
+{2} Capture wifi signal
+{3} Handshake capture (Besside-ng)
+{4} Handshake capture (Airodump-ng)
+{5} Cracking WPA2-PSK passwords (Aircrack-Ng)
+{6} Cracking WPA2-PSK passwords (Hashcat)
+{7} Disable monitor mode  \e[0;31m
+{8} Disclaimer
+\e[0m \e[0m'
+echo -e -n  " \e[0;32m
+┌─[ Enter the your choice ]─[~]
+└──╼ # \e[0m "
+
+tom='1'
+cws='2'
+hcb='3'
+hca='4'
+cpa='5'
+cph='6'
+dmm='7'
+des='8'
+
+
+                                        #turn on monitor mode
+
+read a
+
+if [ "$a" == "$tom" ]
+then
+
+
+airmon-ng
+
+
+
+
+echo -e -n "Enter you interface : "
+read interface
+
+airmon-ng start $interface
+clear
+piracy
+exit
+
+                                       #Capture wifi signal
+read a
+elif [ "$a" == "$cws" ]
+then
+
+
+gnome-terminal -x sh -c "/usr/local/sbin/script/./cws.sh; bash "
+
+piracy
+exit
+
+                                   #Handshake capture (besside-ng)
+
+read a
+elif [ "$a" == "$hcb" ]
+then
+
+mkdir /root/Desktop/handshake
+
+gnome-terminal -x sh -c "/usr/local/sbin/script/./hcb.sh; bash "
+
+piracy
+exit
+
+
+
+                                #Handshake capture (airodump-ng)
+
+read a
+elif [ "$a" == "$hca" ]
+then
+
+mkdir /root/Desktop/handshake/
+
+gnome-terminal -x sh -c "/usr/local/sbin/script/./hca.sh; bash "
+gnome-terminal -x sh -c "/usr/local/sbin/script/./wde.sh; bash "
+piracy
+exit
+
+
+
+                                  #Cracking WPA2-PSK Passwords(Aircrack-Ng)
+
+read a
+elif [ "$a" == "$cpa" ]
+then
+
+gnome-terminal -x sh -c "/usr/local/sbin/script/./cpa.sh; bash "
+piracy
+exit
+
+
+                                 #Cracking WPA2-PSK Passwords(Hashcat)
+
+read a
+elif [ "$a" == "$cph" ]
+then
+
+gnome-terminal -x sh -c "/usr/local/sbin/script/./cph.sh; bash "
+piracy
+exit
+
+
+read a
+elif [ "$a" == "$dmm" ]
+then
+
+airmon-ng
+
+
+
+
+echo -e -n "Enter you interface : "
+read interface
+
+airmon-ng stop $interface
+clear
+piracy
+
+
+
+
+read a
+elif [ "$a" == "$des" ]
+then
+
+echo -e "\e[0;31mThis tool is for educational purposes only. Any activity or activity related to the information contained herein is solely your responsibility. Developers are not responsible for any damage caused by this script.\e[0m"
+exit
+
+
+
+fi
